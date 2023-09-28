@@ -77,3 +77,58 @@
 #         print("Incorrect values")
 # finally:
 #     print("Calculations finished")
+
+
+# task3
+# try:
+#     num1 = 0
+#     num2 = 0
+#     operation = 0
+#     user_select = 0
+#     print("You can do an arithmetic operation with 2 numbers")
+#     while user_select != 5:
+#         while True:
+#             try:
+#                 num1 = int(input("Enter the first number: "))
+#             except ValueError:
+#                 print("Enter only numbers, please")
+#                 continue
+#             break
+#         while True:
+#             try:
+#                 num2 = int(input("Enter the second number: "))
+#             except ValueError:
+#                 print("Enter only numbers, please")
+#                 continue
+#             break
+#
+#         while True:
+#             try:
+#                 print("Choose the action from menu: \n1. + \n2. - \n3. * \n4. / \n5. Exit")
+#                 user_select = int(input("Enter menu number: "))
+#                 if user_select == 1:
+#                     result = num1 + num2
+#                     print(f"{num1} + {num2} = {result}")
+#                     print("End of calculations, starting anew!")
+#                 elif user_select == 2:
+#                     result = num1 - num2
+#                     print(f"{num1} - {num2} = {result}")
+#                     print("End of calculations, starting anew!")
+#                 elif user_select == 3:
+#                     result = num1 * num2
+#                     print(f"{num1} * {num2} = {result}")
+#                     print("End of calculations, starting anew!")
+#                 elif user_select == 4:
+#                     result = num1 / num2
+#                     print(f"{num1} / {num2} = {result}")
+#                     print("End of calculations, starting anew!")
+#                 elif user_select == 5:
+#                     print("Exit...See you next time!")
+#             except ValueError:
+#                 print("Incorrect value, choose a menu item!")
+#                 continue
+#             except ZeroDivisionError:
+#                 print("Division by zero is impossible. Let's start anew")
+#             break
+# except Exception as e:
+#     print(f"Error: {e}")
